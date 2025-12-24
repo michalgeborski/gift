@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Christmas Gift</title>
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #2b2f3a, #4a3a3a);
+      color: #1f1f1f;
+      overflow-x: hidden;
+    }
+
+    /* Falling snowflakes */
+    .snowflake {
+      position: fixed;
+      top: -10%;
+      color: white;
+      font-size: 18px;
+      user-select: none;
+      pointer-events: none;
+      animation-name: fall;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      z-index: 3;
+      opacity: 0.8;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      100% {
+        transform: translateY(120vh) rotate(360deg);
+      }
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 34px;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 0 16px;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 14px;
+      background: #7a2e2e;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .centre {
+      text-align: center;
+    }
+
+    .small {
+      margin-top: 16px;
+      font-size: 13px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Snowflakes -->
+  <div class="snowflake" style="left:5%; animation-duration:12s;">❄</div>
+  <div class="snowflake" style="left:15%; animation-duration:18s; font-size:22px;">❄</div>
+  <div class="snowflake" style="left:25%; animation-duration:14s;">❄</div>
+  <div class="snowflake" style="left:35%; animation-duration:20s; font-size:24px;">❄</div>
+  <div class="snowflake" style="left:45%; animation-duration:16s;">❄</div>
+  <div class="snowflake" style="left:55%; animation-duration:22s; font-size:26px;">❄</div>
+  <div class="snowflake" style="left:65%; animation-duration:15s;">❄</div>
+  <div class="snowflake" style="left:75%; animation-duration:19s; font-size:23px;">❄</div>
+  <div class="snowflake" style="left:85%; animation-duration:17s;">❄</div>
+  <div class="snowflake" style="left:95%; animation-duration:21s;">❄</div>
+
+  <div class="wrap">
+    <div class="card">
+      <h1>Merry Christmas</h1>
+
+      <p>Dear Rasalinko,</p>
+
+      <p>
+        My sweet princess. I wish you a very happy Christmas and as my gift to you,
+        I would love to offer you a wonderful time to relax, rest and rejuvenate.
+        Thank you for being so kind and the best all year and I hope that this present will make you happy.
+      </p>
+
+      <p>
+        Yours,<br>
+        Michalek
+      </p>
+
+      <div class="centre">
+        <a class="btn" href="voucher.pdf" download>Download your voucher</a>
+      </div>
+
+      <p class="small">
+        If the download does not start automatically, tap and hold the button and choose download.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
